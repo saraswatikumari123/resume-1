@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #4a4a8f;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2.4em;
+}
+
+.section {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 15px; /* Increased padding */
+}
+
+.section:hover {
+    background-color: #e3f2fd;
+}
+
+.section h3 {
+    font-size: 1.8em;
+    color: #4a4a8f;
+    padding: 10px;
+}
+
+.toggle-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.toggle {
+    position: relative;
+}
+
+.toggle::before {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.toggle:hover::before {
+    transform: rotate(180deg);
+}
+
+.toggle-content.active {
+    display: block;
+}
+
+/* Style for links in projects */
+a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles for bullets */
+.section ul {
+    padding-left: 20px; /* Add padding to ul for bullet points */
+}
+
+.section li:hover {
+    color: #4a4a8f; /* Change bullet color on hover */
+    background-color: #e3f2fd; /* Add background color on hover */
+}
+
+.section {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 15px; /* Increase padding */
+}
+
+.section:hover {
+    background-color: #e3f2fd;
+}
+
+.section ul {
+    padding-left: 20px; /* Add padding to ul for bullet points */
+}
+
+.section li:hover {
+    color: #4a4a8f; /* Change bullet color on hover */
+    background-color: #e3f2fd; /* Add background color on hover */
+}
